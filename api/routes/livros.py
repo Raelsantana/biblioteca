@@ -30,4 +30,4 @@ def put_preco_livro(codigo: int, data: AlterarPrecoInput):
     livro = alterar_preco_livro(codigo, data: AlterarPrecoInput):
     if not livro:
         raise HTTPExpeception(status_code=404, detail="Livro não encontrado")
-return {"codigo": livro.codigo, "titulo": livro.titulo, "preco_final": livro.preco_final()}
+    return {"codigo": livro.codigo, "titulo": livro.titulo, "preco_final": livro.preco_final()}
